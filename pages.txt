@@ -25,6 +25,9 @@
 -- post:refrences => add a refrence for our post in the model file
 
 
-
-
+// to create signin and signup we will use devise gem 
+1- install devise=> gem install devise
+2- add this in terminal => rails generate devise:install
+3- follow the steps
+4- run this on terminal => rails generate devise User
 
