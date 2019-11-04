@@ -1,0 +1,30 @@
+// My app pages
+1- profile page
+2- comment section
+3- plog post feeds
+4- creattingpost
+5- show page 
+
+// start building app
+1- create app folders => rails new rumbler-app
+2- run app on my local machine => rails server
+3- connect to github => git init => git add . => git commit -m "initial tumblr app"
+4- generate controller => 
+ - rails generate controller posts => this create our ( view file - test file - controller file - stylesheet file )
+5- creat index in post controller to be my main page 
+6- to add the apility to add any routs for post page => got to routs file => write ( resources :posts ) 7- make my index is the mai page => root "posts#index"
+8- for any methods in the controller we creat a file for it in the view folder
+9- create a modal for posts => rails generate model Post title:string body:text
+10 push all model the change to database =? rake db:migrate
+
+// adding validation in to post model
+1-validate :title , presence: true , length{ minimum:5 }
+
+// add comment model
+1- add model => rails generate model comment name:string body:text  post:references
+-- post:refrences => add a refrence for our post in the model file
+
+
+
+
+
